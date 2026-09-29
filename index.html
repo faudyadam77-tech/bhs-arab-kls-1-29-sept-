@@ -15,271 +15,228 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            padding: 20px;
+            padding: 12px;
         }
 
         .container {
             max-width: 1000px;
             margin: 0 auto;
             background: white;
-            border-radius: 20px;
-            padding: 40px;
+            border-radius: 16px;
+            padding: 20px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
 
-        .page {
-            display: none;
-        }
-
+        .page { display: none; }
         .page.active {
             display: block;
             animation: fadeIn 0.5s ease-in;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(15px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
         .header {
             text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
             border-bottom: 3px solid #667eea;
         }
 
         .header h1 {
             color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 1.6em;
+            margin-bottom: 8px;
         }
 
         .header .arabic-title {
-            font-size: 3em;
+            font-size: 2em;
             color: #764ba2;
-            margin: 20px 0;
+            margin: 12px 0;
             font-family: 'Traditional Arabic', 'Arial', sans-serif;
         }
 
         .header .subtitle {
             color: #666;
-            font-size: 1.2em;
+            font-size: 0.95em;
         }
 
         .learning-objectives {
             background: #f8f9fa;
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            border-left: 5px solid #667eea;
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            border-left: 4px solid #667eea;
         }
 
         .learning-objectives h2 {
             color: #667eea;
-            margin-bottom: 15px;
-            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-size: 1.2em;
         }
 
-        .learning-objectives ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
+        .learning-objectives ul { list-style: none; padding-left: 0; }
         .learning-objectives li {
-            padding: 8px 0;
+            padding: 6px 0;
             color: #333;
-            font-size: 1.1em;
+            font-size: 0.95em;
             position: relative;
-            padding-left: 30px;
+            padding-left: 24px;
         }
-
         .learning-objectives li:before {
             content: "✓";
             position: absolute;
             left: 0;
             color: #667eea;
             font-weight: bold;
-            font-size: 1.2em;
         }
 
-        .vocabulary-section {
-            margin-bottom: 40px;
-        }
-
+        .vocabulary-section { margin-bottom: 24px; }
         .vocabulary-section h2 {
             color: #764ba2;
-            font-size: 2em;
-            margin-bottom: 25px;
+            font-size: 1.4em;
+            margin-bottom: 16px;
             text-align: center;
         }
 
         .vocabulary-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
         }
 
         .vocab-card {
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 30px 20px;
-            border-radius: 15px;
+            padding: 16px 10px;
+            border-radius: 12px;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
+            transition: transform 0.2s ease;
         }
 
-        .vocab-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
-        }
+        .vocab-card:active { transform: scale(0.97); }
 
         .vocab-card .arabic {
-            font-size: 3em;
+            font-size: 1.8em;
             color: #764ba2;
-            margin-bottom: 10px;
+            margin-bottom: 4px;
             font-family: 'Traditional Arabic', 'Arial', sans-serif;
         }
 
         .vocab-card .latin {
-            font-size: 1.2em;
+            font-size: 0.8em;
             color: #667eea;
             font-weight: bold;
-            margin-bottom: 5px;
+            margin-bottom: 2px;
         }
 
         .vocab-card .indonesian {
-            font-size: 1.1em;
+            font-size: 0.75em;
             color: #666;
         }
 
         .tips-section {
             background: #d1ecf1;
-            padding: 25px;
-            border-radius: 15px;
-            border-left: 5px solid #17a2b8;
-            margin-bottom: 30px;
+            padding: 16px;
+            border-radius: 12px;
+            border-left: 4px solid #17a2b8;
+            margin-bottom: 24px;
         }
 
         .tips-section h2 {
             color: #0c5460;
-            margin-bottom: 15px;
-            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-size: 1.2em;
         }
 
-        .tips-section ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
+        .tips-section ul { list-style: none; padding-left: 0; }
         .tips-section li {
-            padding: 10px 0;
+            padding: 6px 0;
             color: #0c5460;
-            font-size: 1.1em;
-            padding-left: 25px;
+            font-size: 0.9em;
+            padding-left: 24px;
             position: relative;
         }
-
         .tips-section li:before {
-            content: "•";
+            content: "💡";
             position: absolute;
             left: 0;
-            color: #17a2b8;
-            font-weight: bold;
         }
 
         .navigation {
             display: flex;
             justify-content: space-between;
-            margin-top: 40px;
-            padding-top: 20px;
+            align-items: center;
+            margin-top: 24px;
+            padding-top: 16px;
             border-top: 2px solid #e0e0e0;
+            gap: 8px;
         }
 
         .nav-btn {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             border: none;
-            padding: 15px 30px;
+            padding: 12px 16px;
             border-radius: 10px;
-            font-size: 1.1em;
+            font-size: 0.9em;
             cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            touch-action: manipulation;
         }
 
-        .nav-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        .nav-btn:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-            transform: none;
-        }
+        .nav-btn:active { transform: scale(0.97); }
+        .nav-btn:disabled { background: #ccc; cursor: not-allowed; }
 
         .page-indicator {
-            text-align: center;
             color: #666;
-            font-size: 1.1em;
-            align-self: center;
+            font-size: 0.85em;
         }
 
-        /* Halaman Latihan */
         .exercise-section h2 {
             color: #764ba2;
-            font-size: 2em;
-            margin-bottom: 25px;
+            font-size: 1.3em;
+            margin-bottom: 16px;
             text-align: center;
         }
 
         .exercise-type {
             background: #f8f9fa;
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            border-left: 5px solid #667eea;
-        }
-
-        .exercise-type h3 {
-            color: #667eea;
+            padding: 14px;
+            border-radius: 12px;
             margin-bottom: 20px;
-            font-size: 1.5em;
+            border-left: 4px solid #667eea;
         }
 
         .quiz-item {
             background: white;
-            padding: 20px;
-            margin: 15px 0;
+            padding: 14px;
+            margin: 12px 0;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
         }
 
         .quiz-question {
-            font-size: 1.3em;
+            font-size: 1em;
             color: #333;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .quiz-options {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
+            grid-template-columns: 1fr;
+            gap: 8px;
         }
 
         .quiz-option {
             background: #f5f7fa;
-            padding: 15px;
+            padding: 12px;
             border-radius: 8px;
             text-align: center;
             cursor: pointer;
-            transition: all 0.3s ease;
             border: 2px solid transparent;
-        }
-
-        .quiz-option:hover {
-            background: #e8eaf6;
-            border-color: #667eea;
+            touch-action: manipulation;
+            font-size: 0.95em;
         }
 
         .quiz-option.correct {
@@ -294,51 +251,37 @@
             color: #721c24;
         }
 
-        .quiz-option .arabic {
-            font-size: 2em;
-            font-family: 'Traditional Arabic', 'Arial', sans-serif;
-            color: #764ba2;
-        }
-
-        .quiz-option .indonesian {
-            font-size: 1.1em;
-            color: #666;
-            margin-top: 5px;
-        }
-
         .matching-exercise {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin: 20px 0;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin: 16px 0;
         }
 
         .matching-column {
             background: white;
-            padding: 20px;
+            padding: 14px;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
         }
 
         .matching-column h4 {
             color: #667eea;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             text-align: center;
+            font-size: 1em;
         }
 
         .matching-item {
             background: #f5f7fa;
-            padding: 15px;
-            margin: 10px 0;
+            padding: 10px;
+            margin: 6px 0;
             border-radius: 8px;
             text-align: center;
             cursor: pointer;
-            transition: all 0.3s ease;
             border: 2px solid transparent;
-        }
-
-        .matching-item:hover {
-            background: #e8eaf6;
+            touch-action: manipulation;
+            font-size: 0.9em;
         }
 
         .matching-item.selected {
@@ -347,87 +290,69 @@
             border-color: #764ba2;
         }
 
-        .matching-item .arabic {
-            font-size: 2em;
-            font-family: 'Traditional Arabic', 'Arial', sans-serif;
-        }
-
-        .matching-item .indonesian {
-            font-size: 1.1em;
-        }
-
         .score-display {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 20px;
-            border-radius: 15px;
+            padding: 16px;
+            border-radius: 12px;
             text-align: center;
-            margin: 20px 0;
+            margin: 16px 0;
         }
 
-        .score-display h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        .score-display .score {
-            font-size: 3em;
-            font-weight: bold;
-        }
+        .score-display h3 { font-size: 1.1em; margin-bottom: 6px; }
+        .score-display .score { font-size: 2.2em; font-weight: bold; }
 
         .reset-btn {
             background: #28a745;
             color: white;
             border: none;
-            padding: 12px 25px;
+            padding: 10px 20px;
             border-radius: 8px;
-            font-size: 1em;
+            font-size: 0.95em;
             cursor: pointer;
-            margin-top: 15px;
-            transition: all 0.3s ease;
+            margin-top: 10px;
+            touch-action: manipulation;
         }
 
-        .reset-btn:hover {
-            background: #218838;
-            transform: translateY(-2px);
-        }
+        .reset-btn:active { transform: scale(0.97); }
 
         .footer {
             text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
+            margin-top: 24px;
+            padding-top: 16px;
             border-top: 2px solid #e0e0e0;
             color: #666;
+            font-size: 0.85em;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
+        /* Layar sangat kecil */
+        @media (max-width: 360px) {
+            .vocabulary-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+            .vocab-card .arabic { font-size: 1.5em; }
+            .vocab-card { padding: 12px 6px; }
+            .container { padding: 14px; }
+        }
 
-            .header h1 {
-                font-size: 1.8em;
-            }
+        /* Layar tablet */
+        @media (min-width: 600px) {
+            body { padding: 24px; }
+            .container { padding: 30px; border-radius: 20px; }
+            .header h1 { font-size: 2em; }
+            .header .arabic-title { font-size: 2.5em; }
+            .vocabulary-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+            .vocab-card .arabic { font-size: 2.2em; }
+            .vocab-card .latin { font-size: 1em; }
+            .vocab-card .indonesian { font-size: 0.95em; }
+            .quiz-options { grid-template-columns: repeat(3, 1fr); }
+            .matching-exercise { grid-template-columns: 1fr 1fr; }
+            .nav-btn { padding: 14px 28px; font-size: 1em; }
+        }
 
-            .header .arabic-title {
-                font-size: 2em;
-            }
-
-            .vocab-card .arabic {
-                font-size: 2.5em;
-            }
-
-            .vocabulary-grid {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            }
-
-            .matching-exercise {
-                grid-template-columns: 1fr;
-            }
-
-            .quiz-options {
-                grid-template-columns: 1fr;
-            }
+        /* Layar komputer */
+        @media (min-width: 900px) {
+            .vocabulary-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+            .vocab-card { padding: 24px 16px; }
+            .vocab-card .arabic { font-size: 2.8em; }
         }
     </style>
 </head>
@@ -438,14 +363,14 @@
             <div class="header">
                 <h1>Belajar Bahasa Arab</h1>
                 <div class="arabic-title">أُسْرَتِي</div>
-                <div class="subtitle">Kelas 1 SD - Tema: Keluargaku</div>
+                <div class="subtitle">Kelas 1 SD — Tema: Keluargaku</div>
             </div>
 
             <div class="learning-objectives">
                 <h2>Tujuan Pembelajaran</h2>
                 <ul>
-                    <li>Mengenal dan melafalkan kosakata anggota keluarga dalam bahasa Arab</li>
-                    <li>Menyebutkan nama-nama anggota keluarga dengan benar</li>
+                    <li>Mengenal kosakata anggota keluarga dalam bahasa Arab</li>
+                    <li>Melafalkan dan menyebutkan nama anggota keluarga dengan benar</li>
                     <li>Memahami arti kosakata keluarga dalam bahasa Indonesia</li>
                 </ul>
             </div>
@@ -456,51 +381,43 @@
                     <div class="vocab-card">
                         <div class="arabic">أَبٌ</div>
                         <div class="latin">Abun</div>
-                        <div class="indonesian">Bapak / Ayah</div>
+                        <div class="indonesian">Ayah</div>
                     </div>
-
                     <div class="vocab-card">
                         <div class="arabic">أُمٌّ</div>
                         <div class="latin">Ummun</div>
                         <div class="indonesian">Ibu</div>
                     </div>
-
                     <div class="vocab-card">
                         <div class="arabic">أَخٌ</div>
                         <div class="latin">Akhun</div>
-                        <div class="indonesian">Saudara Laki-laki</div>
+                        <div class="indonesian">Kakak/Adik Lk.</div>
                     </div>
-
                     <div class="vocab-card">
                         <div class="arabic">أُخْتٌ</div>
                         <div class="latin">Ukhtun</div>
-                        <div class="indonesian">Saudara Perempuan</div>
+                        <div class="indonesian">Kakak/Adik Pr.</div>
                     </div>
-
                     <div class="vocab-card">
                         <div class="arabic">جَدٌّ</div>
                         <div class="latin">Jaddun</div>
                         <div class="indonesian">Kakek</div>
                     </div>
-
                     <div class="vocab-card">
                         <div class="arabic">جَدَّةٌ</div>
                         <div class="latin">Jaddatun</div>
                         <div class="indonesian">Nenek</div>
                     </div>
-
                     <div class="vocab-card">
                         <div class="arabic">عَمٌّ</div>
                         <div class="latin">'Ammun</div>
                         <div class="indonesian">Paman</div>
                     </div>
-
                     <div class="vocab-card">
                         <div class="arabic">عَمَّةٌ</div>
                         <div class="latin">'Ammatun</div>
                         <div class="indonesian">Bibi</div>
                     </div>
-
                     <div class="vocab-card">
                         <div class="arabic">أُسْرَةٌ</div>
                         <div class="latin">Usrah</div>
@@ -513,15 +430,15 @@
                 <h2>Tips Belajar</h2>
                 <ul>
                     <li>Ulangi pelafalan setiap kata minimal 3 kali</li>
-                    <li>Perhatikan harakat (tanda baca) pada setiap huruf</li>
-                    <li>Latih dengan menunjuk anggota keluarga dan menyebut namanya dalam bahasa Arab</li>
-                    <li>Dengarkan audio dari guru atau sumber belajar untuk pelafalan yang benar</li>
+                    <li>Perhatikan harakat pada setiap huruf</li>
+                    <li>Latih dengan menunjuk anggota keluarga di rumah</li>
+                    <li>Dengarkan contoh pengucapan dari guru</li>
                 </ul>
             </div>
 
             <div class="navigation">
                 <button class="nav-btn" disabled>Sebelumnya</button>
-                <div class="page-indicator">Halaman 1 dari 2</div>
+                <div class="page-indicator">Hal. 1/2</div>
                 <button class="nav-btn" onclick="nextPage()">Latihan →</button>
             </div>
         </div>
@@ -536,123 +453,71 @@
 
             <div class="exercise-section">
                 <h2>Latihan 1: Pilih Jawaban yang Benar</h2>
-                
                 <div class="exercise-type">
                     <div class="quiz-item">
-                        <div class="quiz-question">1. Apa arti dari kata "أَبٌ"?</div>
+                        <div class="quiz-question">1. Apa arti "أَبٌ"?</div>
                         <div class="quiz-options">
-                            <div class="quiz-option" onclick="checkAnswer(this, false)">
-                                <div class="indonesian">Ibu</div>
-                            </div>
-                            <div class="quiz-option" onclick="checkAnswer(this, true)">
-                                <div class="indonesian">Bapak</div>
-                            </div>
-                            <div class="quiz-option" onclick="checkAnswer(this, false)">
-                                <div class="indonesian">Kakek</div>
-                            </div>
+                            <div class="quiz-option" onclick="checkAnswer(this, false)">Ibu</div>
+                            <div class="quiz-option" onclick="checkAnswer(this, true)">Ayah</div>
+                            <div class="quiz-option" onclick="checkAnswer(this, false)">Kakek</div>
                         </div>
                     </div>
-
                     <div class="quiz-item">
-                        <div class="quiz-question">2. Apa arti dari kata "أُمٌّ"?</div>
+                        <div class="quiz-question">2. Apa arti "أُمٌّ"?</div>
                         <div class="quiz-options">
-                            <div class="quiz-option" onclick="checkAnswer(this, false)">
-                                <div class="indonesian">Nenek</div>
-                            </div>
-                            <div class="quiz-option" onclick="checkAnswer(this, false)">
-                                <div class="indonesian">Bibi</div>
-                            </div>
-                            <div class="quiz-option" onclick="checkAnswer(this, true)">
-                                <div class="indonesian">Ibu</div>
-                            </div>
+                            <div class="quiz-option" onclick="checkAnswer(this, false)">Nenek</div>
+                            <div class="quiz-option" onclick="checkAnswer(this, false)">Bibi</div>
+                            <div class="quiz-option" onclick="checkAnswer(this, true)">Ibu</div>
                         </div>
                     </div>
-
                     <div class="quiz-item">
-                        <div class="quiz-question">3. Apa arti dari kata "جَدٌّ"?</div>
+                        <div class="quiz-question">3. Apa arti "جَدٌّ"?</div>
                         <div class="quiz-options">
-                            <div class="quiz-option" onclick="checkAnswer(this, true)">
-                                <div class="indonesian">Kakek</div>
-                            </div>
-                            <div class="quiz-option" onclick="checkAnswer(this, false)">
-                                <div class="indonesian">Paman</div>
-                            </div>
-                            <div class="quiz-option" onclick="checkAnswer(this, false)">
-                                <div class="indonesian">Saudara Laki-laki</div>
-                            </div>
+                            <div class="quiz-option" onclick="checkAnswer(this, true)">Kakek</div>
+                            <div class="quiz-option" onclick="checkAnswer(this, false)">Paman</div>
+                            <div class="quiz-option" onclick="checkAnswer(this, false)">Saudara Lk.</div>
                         </div>
                     </div>
-
                     <div class="quiz-item">
-                        <div class="quiz-question">4. Apa arti dari kata "جَدَّةٌ"?</div>
+                        <div class="quiz-question">4. Apa arti "جَدَّةٌ"?</div>
                         <div class="quiz-options">
-                            <div class="quiz-option" onclick="checkAnswer(this, false)">
-                                <div class="indonesian">Bibi</div>
-                            </div>
-                            <div class="quiz-option" onclick="checkAnswer(this, true)">
-                                <div class="indonesian">Nenek</div>
-                            </div>
-                            <div class="quiz-option" onclick="checkAnswer(this, false)">
-                                <div class="indonesian">Ibu</div>
-                            </div>
+                            <div class="quiz-option" onclick="checkAnswer(this, false)">Bibi</div>
+                            <div class="quiz-option" onclick="checkAnswer(this, true)">Nenek</div>
+                            <div class="quiz-option" onclick="checkAnswer(this, false)">Ibu</div>
                         </div>
                     </div>
-
                     <div class="quiz-item">
-                        <div class="quiz-question">5. Apa arti dari kata "أُخْتٌ"?</div>
+                        <div class="quiz-question">5. Apa arti "أُخْتٌ"?</div>
                         <div class="quiz-options">
-                            <div class="quiz-option" onclick="checkAnswer(this, false)">
-                                <div class="indonesian">Saudara Laki-laki</div>
-                            </div>
-                            <div class="quiz-option" onclick="checkAnswer(this, true)">
-                                <div class="indonesian">Saudara Perempuan</div>
-                            </div>
-                            <div class="quiz-option" onclick="checkAnswer(this, false)">
-                                <div class="indonesian">Bibi</div>
-                            </div>
+                            <div class="quiz-option" onclick="checkAnswer(this, false)">Saudara Lk.</div>
+                            <div class="quiz-option" onclick="checkAnswer(this, true)">Saudara Pr.</div>
+                            <div class="quiz-option" onclick="checkAnswer(this, false)">Bibi</div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="exercise-section">
-                <h2>Latihan 2: Cocokkan Kata Arab dengan Artinya</h2>
-                
+                <h2>Latihan 2: Cocokkan Kata</h2>
                 <div class="exercise-type">
                     <div class="matching-exercise">
                         <div class="matching-column">
                             <h4>Kata Arab</h4>
-                            <div class="matching-item" data-arabic="أَخٌ" onclick="selectArabic(this)">
-                                <div class="arabic">أَخٌ</div>
-                            </div>
-                            <div class="matching-item" data-arabic="عَمٌّ" onclick="selectArabic(this)">
-                                <div class="arabic">عَمٌّ</div>
-                            </div>
-                            <div class="matching-item" data-arabic="عَمَّةٌ" onclick="selectArabic(this)">
-                                <div class="arabic">عَمَّةٌ</div>
-                            </div>
-                            <div class="matching-item" data-arabic="أُسْرَةٌ" onclick="selectArabic(this)">
-                                <div class="arabic">أُسْرَةٌ</div>
-                            </div>
+                            <div class="matching-item" data-arabic="أَخٌ" onclick="selectArabic(this)">أَخٌ</div>
+                            <div class="matching-item" data-arabic="عَمٌّ" onclick="selectArabic(this)">عَمٌّ</div>
+                            <div class="matching-item" data-arabic="عَمَّةٌ" onclick="selectArabic(this)">عَمَّةٌ</div>
+                            <div class="matching-item" data-arabic="أُسْرَةٌ" onclick="selectArabic(this)">أُسْرَةٌ</div>
                         </div>
                         <div class="matching-column">
-                            <h4>Arti dalam Bahasa Indonesia</h4>
-                            <div class="matching-item" data-indonesian="Keluarga" onclick="selectIndonesian(this)">
-                                <div class="indonesian">Keluarga</div>
-                            </div>
-                            <div class="matching-item" data-indonesian="Bibi" onclick="selectIndonesian(this)">
-                                <div class="indonesian">Bibi</div>
-                            </div>
-                            <div class="matching-item" data-indonesian="Saudara Laki-laki" onclick="selectIndonesian(this)">
-                                <div class="indonesian">Saudara Laki-laki</div>
-                            </div>
-                            <div class="matching-item" data-indonesian="Paman" onclick="selectIndonesian(this)">
-                                <div class="indonesian">Paman</div>
-                            </div>
+                            <h4>Arti</h4>
+                            <div class="matching-item" data-indonesian="Keluarga" onclick="selectIndonesian(this)">Keluarga</div>
+                            <div class="matching-item" data-indonesian="Bibi" onclick="selectIndonesian(this)">Bibi</div>
+                            <div class="matching-item" data-indonesian="Saudara Laki-laki" onclick="selectIndonesian(this)">Saudara Lk.</div>
+                            <div class="matching-item" data-indonesian="Paman" onclick="selectIndonesian(this)">Paman</div>
                         </div>
                     </div>
-                    <div style="text-align: center;">
-                        <button class="reset-btn" onclick="resetMatching()">Reset Pilihan</button>
+                    <div style="text-align:center; margin-top:8px;">
+                        <button class="reset-btn" onclick="resetMatching()">Reset</button>
                     </div>
                 </div>
             </div>
@@ -661,54 +526,45 @@
                 <h3>Skor Kamu</h3>
                 <div class="score" id="score">0</div>
                 <p>dari 5 soal</p>
-                <button class="reset-btn" onclick="resetQuiz()">Mulai Ulangi</button>
+                <button class="reset-btn" onclick="resetQuiz()">Ulangi</button>
             </div>
 
             <div class="navigation">
                 <button class="nav-btn" onclick="prevPage()">← Materi</button>
-                <div class="page-indicator">Halaman 2 dari 2</div>
+                <div class="page-indicator">Hal. 2/2</div>
                 <button class="nav-btn" disabled>Selesai</button>
             </div>
         </div>
 
         <div class="footer">
-            <p>Selamat Belajar! Semoga berhasil menguasai kosakata keluarga dalam bahasa Arab.</p>
+            <p>Selamat Belajar! Semangat ya! 📚</p>
         </div>
     </div>
 
     <script>
-        let currentPage = 1;
         let score = 0;
         let answeredQuestions = new Set();
-        let selectedArabic = null;
-        let selectedIndonesian = null;
+        let selectedArabic = null, selectedIndonesian = null;
 
         function nextPage() {
             document.getElementById('page1').classList.remove('active');
             document.getElementById('page2').classList.add('active');
-            currentPage = 2;
-            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function prevPage() {
             document.getElementById('page2').classList.remove('active');
             document.getElementById('page1').classList.add('active');
-            currentPage = 1;
-            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function checkAnswer(element, isCorrect) {
             const quizItem = element.closest('.quiz-item');
-            const questionNumber = quizItem.querySelector('.quiz-question').textContent.match(/\d+/)[0];
+            const qNum = quizItem.querySelector('.quiz-question').textContent.match(/\d+/)[0];
+            if (answeredQuestions.has(qNum)) return;
             
-            if (answeredQuestions.has(questionNumber)) {
-                return;
-            }
-
             const options = quizItem.querySelectorAll('.quiz-option');
-            options.forEach(option => {
-                option.style.pointerEvents = 'none';
-            });
+            options.forEach(opt => opt.style.pointerEvents = 'none');
 
             if (isCorrect) {
                 element.classList.add('correct');
@@ -716,99 +572,65 @@
                 document.getElementById('score').textContent = score;
             } else {
                 element.classList.add('incorrect');
-                options.forEach(option => {
-                    if (option.onclick.toString().includes('true')) {
-                        option.classList.add('correct');
-                    }
+                options.forEach(opt => {
+                    if (opt.onclick.toString().includes('true')) opt.classList.add('correct');
                 });
             }
-
-            answeredQuestions.add(questionNumber);
+            answeredQuestions.add(qNum);
         }
 
-        function selectArabic(element) {
-            document.querySelectorAll('.matching-column:first-child .matching-item').forEach(item => {
-                item.classList.remove('selected');
-            });
-            element.classList.add('selected');
-            selectedArabic = element.dataset.arabic;
+        function selectArabic(el) {
+            document.querySelectorAll('.matching-column:first-child .matching-item').forEach(i => i.classList.remove('selected'));
+            el.classList.add('selected');
+            selectedArabic = el.dataset.arabic;
             checkMatch();
         }
 
-        function selectIndonesian(element) {
-            document.querySelectorAll('.matching-column:last-child .matching-item').forEach(item => {
-                item.classList.remove('selected');
-            });
-            element.classList.add('selected');
-            selectedIndonesian = element.dataset.indonesian;
+        function selectIndonesian(el) {
+            document.querySelectorAll('.matching-column:last-child .matching-item').forEach(i => i.classList.remove('selected'));
+            el.classList.add('selected');
+            selectedIndonesian = el.dataset.indonesian;
             checkMatch();
         }
 
         function checkMatch() {
-            if (selectedArabic && selectedIndonesian) {
-                const matches = {
-                    'أَخٌ': 'Saudara Laki-laki',
-                    'عَمٌّ': 'Paman',
-                    'عَمَّةٌ': 'Bibi',
-                    'أُسْرَةٌ': 'Keluarga'
-                };
-
-                const arabicItems = document.querySelectorAll('.matching-column:first-child .matching-item');
-                const indonesianItems = document.querySelectorAll('.matching-column:last-child .matching-item');
-
-                arabicItems.forEach(item => {
-                    if (item.dataset.arabic === selectedArabic) {
-                        if (matches[selectedArabic] === selectedIndonesian) {
-                            item.style.background = '#d4edda';
-                            item.style.borderColor = '#28a745';
-                        } else {
-                            item.style.background = '#f8d7da';
-                            item.style.borderColor = '#dc3545';
-                        }
-                    }
-                });
-
-                indonesianItems.forEach(item => {
-                    if (item.dataset.indonesian === selectedIndonesian) {
-                        if (matches[selectedArabic] === selectedIndonesian) {
-                            item.style.background = '#d4edda';
-                            item.style.borderColor = '#28a745';
-                        } else {
-                            item.style.background = '#f8d7da';
-                            item.style.borderColor = '#dc3545';
-                        }
-                    }
-                });
-
-                setTimeout(() => {
-                    selectedArabic = null;
-                    selectedIndonesian = null;
-                }, 1000);
-            }
+            if (!selectedArabic || !selectedIndonesian) return;
+            const matches = {
+                'أَخٌ': 'Saudara Laki-laki',
+                'عَمٌّ': 'Paman',
+                'عَمَّةٌ': 'Bibi',
+                'أُسْرَةٌ': 'Keluarga'
+            };
+            const ok = matches[selectedArabic] === selectedIndonesian;
+            document.querySelectorAll('.matching-item').forEach(item => {
+                if (item.dataset.arabic === selectedArabic || item.dataset.indonesian === selectedIndonesian) {
+                    item.style.background = ok ? '#d4edda' : '#f8d7da';
+                    item.style.borderColor = ok ? '#28a745' : '#dc3545';
+                }
+            });
+            setTimeout(() => {
+                selectedArabic = selectedIndonesian = null;
+            }, 1200);
         }
 
         function resetMatching() {
-            document.querySelectorAll('.matching-item').forEach(item => {
-                item.classList.remove('selected');
-                item.style.background = '';
-                item.style.borderColor = '';
+            document.querySelectorAll('.matching-item').forEach(i => {
+                i.classList.remove('selected');
+                i.style.background = i.style.borderColor = '';
             });
-            selectedArabic = null;
-            selectedIndonesian = null;
+            selectedArabic = selectedIndonesian = null;
         }
 
         function resetQuiz() {
             score = 0;
             answeredQuestions.clear();
-            document.getElementById('score').textContent = score;
-            
-            document.querySelectorAll('.quiz-option').forEach(option => {
-                option.classList.remove('correct', 'incorrect');
-                option.style.pointerEvents = 'auto';
+            document.getElementById('score').textContent = '0';
+            document.querySelectorAll('.quiz-option').forEach(opt => {
+                opt.classList.remove('correct', 'incorrect');
+                opt.style.pointerEvents = 'auto';
             });
-
             resetMatching();
-            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 </body>
